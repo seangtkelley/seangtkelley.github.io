@@ -1,0 +1,304 @@
+
+$color00:    #fff;
+$color01: #f2f2f2;
+$color02: #dadada;
+$color03: #c1c1c1;
+$color04: #a7a7a7;
+$color05: #8e8e8e;
+$color06: #737373;
+$color07: #5d5d5d;
+$color08: #4a4a4a;
+$color09: #404040;
+$color10: #303030;
+$color11: #252525;
+$color12: #1b1b1b;
+$color13: #101010;
+
+$hovercolor: #E84855;
+$accentcolor: #43a5e6;
+
+$red: #e74c3c;
+$orange: #e67e22;
+$green: #1abc9c;
+$blue: #3498db;
+$darkblue: #252b33;
+$darkblue2:
+        #21262d;
+$cyan: #9b59b6;
+$yellow: #d9a81d;
+$l-grey: #f2f2f2;
+$grey: #999;
+
+
+// John's sections backgrounds
+
+$bg-john-00: url('../images/02-john/backgrounds/00.jpg');
+$bg-john-01: url('../images/02-john/backgrounds/01.jpg');
+$bg-john-02: url('../images/02-john/backgrounds/02.jpg');
+$bg-john-03: url('../images/02-john/backgrounds/03.jpg');
+$bg-john-04: url('../images/02-john/backgrounds/04.jpg');
+$bg-john-05: url('../images/02-john/backgrounds/05.jpg');
+$bg-john-06: url('../images/02-john/backgrounds/06.jpg');
+$bg-john-07: url('../images/02-john/backgrounds/07.jpg');
+
+.bg-john-00 {
+  background: $bg-john-00;
+  //background-position: center center;
+  //background-size: cover;
+}
+.bg-john-01 {
+  background: $bg-john-01;
+  //background-position: center center;
+  //background-size: cover;
+}
+.bg-john-02 {
+  background: $bg-john-02;
+  //background-position: center center;
+  //background-size: cover;
+}
+.bg-john-03 {
+  background: $bg-john-03;
+  //background-position: center center;
+  //background-size: cover;
+}
+.bg-john-04 {
+  background: $bg-john-04;
+  //background-position: center center;
+  //background-size: cover;
+}
+.bg-john-05 {
+  background: $bg-john-05;
+  //background-position: center center;
+  //background-size: cover;
+}
+.bg-john-06 {
+  background: $bg-john-06;
+  //background-position: center center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+}
+.bg-john-07 {
+  background: $bg-john-07;
+  //background-position: center center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+}
+
+.john-timeline-01 {
+  background: url("../images/02-john/timeline/timeline-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.john-timeline-02 {
+  background: url("../images/02-john/timeline/timeline-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.john-timeline-03 {
+  background: url("../images/02-john/timeline/timeline-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.john-timeline-04 {
+  background: url("../images/02-john/timeline/timeline-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+// Jessica's sections backgrounds
+
+$bg-jessica-01: url('../images/01-jessica/backgrounds/01.png');
+$bg-jessica-02: url('../images/01-jessica/backgrounds/02.png');
+$bg-jessica-03: url('../images/01-jessica/backgrounds/03.jpg');
+$bg-jessica-04: url('../images/01-jessica/backgrounds/04.jpg');
+$bg-jessica-05: url('../images/01-jessica/backgrounds/05.jpg');
+$bg-jessica-06: url('../images/01-jessica/backgrounds/06.jpg');
+$bg-jessica-07: url('../images/01-jessica/backgrounds/07.jpg');
+
+.bg-jessica-01 {background: $bg-jessica-01;}
+.bg-jessica-02 {background: $bg-jessica-02;}
+.bg-jessica-03 {background: $bg-jessica-03;}
+.bg-jessica-04 {background: $bg-jessica-04;}
+.bg-jessica-05 {background: $bg-jessica-05;}
+.bg-jessica-06 {background: $bg-jessica-06;}
+.bg-jessica-07 {background: $bg-jessica-07;}
+
+.jessica-timeline-01 {
+  background: url("../images/01-jessica/timeline/timeline-1-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.jessica-timeline-02 {
+  background: url("../images/01-jessica/timeline/timeline-2-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.jessica-timeline-03 {
+  background: url("../images/01-jessica/timeline/timeline-3-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.jessica-timeline-04 {
+  background: url("../images/01-jessica/timeline/timeline-4-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+// Startup sections backgrounds
+
+$bg-startup-00: url('../images/04-startup/backgrounds/bg00.jpg');
+$bg-startup-01: url('../images/04-startup/backgrounds/bg01.jpg');
+$bg-startup-02: url('../images/04-startup/backgrounds/bg02.jpg');
+$bg-startup-03: url('../images/04-startup/backgrounds/bg03.jpg');
+$bg-startup-04: url('../images/04-startup/backgrounds/bg04.jpg');
+$bg-startup-05: url('../images/04-startup/backgrounds/bg05.png');
+
+.bg-startup-00 {background: $bg-startup-00;}
+.bg-startup-01 {background: $bg-startup-01;}
+.bg-startup-02 {background: $bg-startup-02;}
+.bg-startup-03 {background: $bg-startup-03;}
+.bg-startup-04 {background: $bg-startup-04;}
+.bg-startup-05 {background: $bg-startup-05;}
+
+.startup-timeline-01 {
+  background: url("../images/04-startup/timeline/timeline-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.startup-timeline-02 {
+  background: url("../images/04-startup/timeline/timeline-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.startup-timeline-03 {
+  background: url("../images/04-startup/timeline/timeline-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.startup-timeline-04 {
+  background: url("../images/04-startup/timeline/timeline-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.startup-featured-01 {background: url("../images/04-startup/featured/02-1.jpg");}
+
+
+// Samantha's sections backgrounds
+$bg-samantha-00: url('../images/03-samantha/backgrounds/bg00.jpg');
+$bg-samantha-01: url('../images/03-samantha/backgrounds/bg01.jpg');
+$bg-samantha-02: url('../images/03-samantha/backgrounds/bg02.jpg');
+$bg-samantha-03: url('../images/03-samantha/backgrounds/bg03.jpg');
+
+.bg-samantha-00 {
+  background: $bg-samantha-00;
+  background-position: center center;
+  background-size: cover;
+}
+.bg-samantha-01 {
+  background: $bg-samantha-01;
+  background-position: center center;
+  background-size: cover;
+}
+.bg-samantha-02 {
+  background: $bg-samantha-02;
+  background-position: center center;
+  background-size: cover;
+}
+.bg-samantha-03 {
+  background: $bg-samantha-03;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.timeline-bg01-02 {
+  background: url("../images/03-samantha/timeline/timeline-1-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.timeline-bg02-02 {
+  background: url("../images/03-samantha/timeline/timeline-2-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.timeline-bg03-02 {
+  background: url("../images/03-samantha/timeline/timeline-3-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.timeline-bg04-02 {
+  background: url("../images/03-samantha/timeline/timeline-4-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+#mobile {
+  background: url("../images/mobile-s.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+
+//Font/link Colors
+.fontcolor-regular, .fontcolor-regular a {color: $color10 !important;;}
+.fontcolor-invert, .fontcolor-invert a {color: $color01 !important;}
+.fontcolor-medium, .fontcolor-medium a {color: $color05 !important;}
+.fontcolor-medium-light, .fontcolor-medium-light a {color: $color04 !important;}
+.hovercolor, .hovercolor a {color: $hovercolor !important;}
+.accent-color, .accent-color a {color: $accentcolor !important;}
+.accent-color a:hover {color: $hovercolor !important;}
+
+.dark-blue {color: $darkblue !important;}
+
+.color00 {color: $color00 !important;}
+.color01 {color: $color01 !important;}
+.color02 {color: $color02 !important;}
+.color03 {color: $color03 !important;}
+.color04 {color: $color04 !important;}
+.color05 {color: $color05 !important;}
+.color06 {color: $color06 !important;}
+.color07 {color: $color07 !important;}
+.color08 {color: $color08 !important;}
+.color09 {color: $color09 !important;}
+.color10 {color: $color10 !important;}
+.color11 {color: $color11 !important;}
+.color12 {color: $color12 !important;}
+.color13 {color: $color13 !important;}
+
+
+//Background Color Classes
+.bg-color00 {background-color: $color00 !important;}
+.bg-color01 {background-color: $color01 !important;}
+.bg-color02 {background-color: $color02 !important;}
+.bg-color03 {background-color: $color03 !important;}
+.bg-color04 {background-color: $color04 !important;}
+.bg-color05 {background-color: $color05 !important;}
+.bg-color06 {background-color: $color06 !important;}
+.bg-color07 {background-color: $color07 !important;}
+.bg-color08 {background-color: $color08 !important;}
+.bg-color09 {background-color: $color09 !important;}
+.bg-color10 {background-color: $color10 !important;}
+.bg-color11 {background-color: $color11 !important;}
+.bg-color12 {background-color: $color12 !important;}
+.bg-color13 {background-color: $color13 !important;}
+
+.bg-red {background-color: $red !important;}
+.bg-orange {background-color: $orange !important;}
+.bg-green {background-color: $green !important;}
+.bg-blue {background-color: $blue !important;}
+.bg-darkblue {background-color: $darkblue !important;}
+.bg-darkblue2 {background-color: $darkblue2 !important;}
+.bg-cyan {background-color: $cyan !important;}
+.bg-yellow {background-color: $yellow !important;}
+.bg-l-grey {background-color: $l-grey !important;}
+.bg-grey {background-color: $grey !important;}
+.bg-skin {background-color: $color00 !important;}
+

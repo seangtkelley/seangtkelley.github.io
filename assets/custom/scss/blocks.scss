@@ -1,0 +1,26 @@
+
+
+@mixin block-margins {  padding: 130px 0 130px 0;  }
+@mixin block-ins-margins {  padding: 100px 0 100px 0;  }
+@mixin infoblock-margins {  margin: 0 0 24px 0;  }
+@mixin block-null-margins {  margin: 0; padding: 0;  }
+
+.e-block {  @include block-margins;  }
+.e-block-ins {@include block-ins-margins;}
+.e-block-null {@include block-null-margins;}
+
+.e-block-centered {
+  text-align: center;
+  //margin: 0 auto;
+}
+.border-bot-3 {  border-bottom: 3px solid $color08;  }
+.border-top-3 {  border-top: 3px solid $color08;  }
+.texture-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/grid.png);
+}
+

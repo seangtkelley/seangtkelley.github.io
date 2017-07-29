@@ -1,0 +1,129 @@
+
+
+/* Button Sizes */
+.btn-lg {font-size: 14px;}
+.btn-default {font-size: 13px;}
+.btn-sm {font-size: 12px;}
+.btn-xs {font-size: 11px; padding: 3px 9px;}
+
+
+/* Button Types */
+.btn-darker,
+.btn-blk,
+.btn-gr,
+.btn-lgr,
+.btn-lgr-str,
+.btn-grey-str,
+.btn-light,
+.btn-wh,
+.btn-wh-str,
+.btn-rd,
+.btn-rd-str {
+  font-weight: 700;
+  border-radius: 21px;
+  padding: 10px 24px;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+}
+.btn-darker {
+  //font-family: $font-accident-one;
+  font-style: oblique;
+  border: 1px solid $color09;
+  background: $color09;
+  color: $color00 !important;;
+  &:hover {  border: 1px solid $hovercolor; background: $hovercolor; color: $color00 !important;;  }
+}
+.btn-blk {
+  //font-family: $font-regular;
+  //font-style: oblique;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid $color10;
+  background: $color10;
+  color: $color00 !important;;
+  &:hover {  border: 1px solid $hovercolor; background: $hovercolor; color: $color00 !important;;  }
+  &:focus {  border: 1px solid $hovercolor; background: $hovercolor; color: $color00 !important;;  }
+}
+.btn-gr {
+  //font-family: $font-accident-one;
+  //font-style: oblique;
+  border: 1px solid $color07;
+  color: $color00 !important;;
+  background: $color07;
+  &:hover {  border: 1px solid $hovercolor; background: $hovercolor; color: $color00 !important;;  }
+}
+.btn-lgr {
+  //font-family: $font-accident-one;
+  font-style: oblique;
+  border: 1px solid #999999;
+  background: #999999;
+  color: $color00 !important;;
+  &:hover {  border: 1px solid $hovercolor; background: $hovercolor; color: $color00 !important;;  }
+}
+.btn-lgr-str {
+  //font-family: $font-accident-one;
+  //font-style: oblique;
+  background:  none;
+  margin-right: 12px;
+  border: 2px solid $color04;
+  color: $color04 !important;;
+  &:hover {  background: none; border: 2px solid $hovercolor; color: $hovercolor !important;  }
+}
+.btn-grey-str {
+  //font-family: $font-accident-one;
+  font-weight: 700;
+  font-style: oblique;
+  background:  none !important;
+  margin-right: 12px;
+  border: 2px solid $color05;
+  color: $color05 !important;;
+  &:hover {  background: none; border: 2px solid $hovercolor; color: $hovercolor !important;;  }
+}
+.btn-light {
+  //font-family: $font-accident-one;
+  font-style: oblique;
+  background:  $color02;
+  margin-right: 12px;
+  border: 1px solid $color02;
+  color: $color09 !important;
+  &:hover {  background: $hovercolor; border: 1px solid $hovercolor; color: $color00 !important;;  }
+}
+.btn-wh-str {
+  //font-family: $font-accident-one;
+  font-style: oblique;
+  background:  none;
+  margin-right: 12px;
+  border: 2px solid $color05;
+  color: $color05 !important;;
+  &:hover {  background: none; border: 2px solid $hovercolor; color: $hovercolor !important;  }
+}
+.btn-wh {
+  //font-family: $font-accident-one;
+  font-style: oblique;
+  background:  $color00;
+  margin-right: 12px;
+  border: 2px solid $color00;
+  color: $color06 !important;;
+  &:hover {  background: $hovercolor; border: 2px solid $hovercolor; color: $color00 !important;  }
+}
+.btn-rd {
+  //font-family: $font-regular;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid $hovercolor;
+  color: $color00 !important;;
+  background: $hovercolor;
+  &:hover {  border: 1px solid #ec1717; background: #ec1717; color: $color00 !important;;  }
+}
+.btn-rd-str {
+  //font-family: $font-accident-one;
+  font-style: oblique;
+  background:  none;
+  margin-right: 12px;
+  border: 2px solid $hovercolor;
+  color: $hovercolor !important;;
+  &:hover {  background: none; border: 2px solid $color00; color: $color00 !important;  }
+}
