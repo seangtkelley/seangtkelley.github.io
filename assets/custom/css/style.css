@@ -23,6 +23,11 @@
 .bg-john-07 {
   background: url("../images/02-john/backgrounds/07.jpg"); }
 
+.bg-john-08 {
+  background: url("../../../img/tupelo-live-me.jpg");
+  background-position: center;
+  background-size: cover; }
+
 .john-timeline-01 {
   background: url("../images/02-john/timeline/timeline-1.jpg");
   background-position: center;
@@ -287,6 +292,9 @@
 
 .bg-color13 {
   background-color: #101010 !important; }
+
+.bg-color14 {
+  background-color: #3a2323 !important; }
 
 .bg-red {
   background-color: #e74c3c !important; }
