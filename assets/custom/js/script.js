@@ -168,12 +168,12 @@
         });
 
         /* Magnific Popup */
-        $('.gallery-item').magnificPopup({
+        /*$('.gallery-item').magnificPopup({
             type: 'image',
             gallery: {
                 enabled: true
             }
-        });
+        });*/
 
         /* Progress Tracker */
         (function () {
