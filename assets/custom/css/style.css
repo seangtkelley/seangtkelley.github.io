@@ -2405,7 +2405,8 @@ footer {
     footer a:hover {
       text-decoration: underline; }
   footer .contact {
-    display: table; }
+    display: table;
+    width: 100%; }
     footer .contact i {
       margin-top: -4px; }
       footer .contact i::before {
