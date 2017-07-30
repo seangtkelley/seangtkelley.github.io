@@ -58,6 +58,22 @@
   background-position: center;
   background-size: cover; }
 
+.work-timeline-01 {
+  background: url("../../../img/ccom-vislab.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.work-timeline-02 {
+  background: url("../../../img/laser-wave-tank.jpg");
+  background-position-x: center;
+  background-position-y: 8%;
+  background-size: cover; }
+
+.work-timeline-03 {
+  background: url("../../../img/umass-job.jpg");
+  background-position: center;
+  background-size: cover; }
+
 .bg-jessica-01 {
   background: url("../images/01-jessica/backgrounds/01.png"); }
 
