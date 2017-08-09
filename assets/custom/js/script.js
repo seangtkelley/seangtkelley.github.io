@@ -1,4 +1,4 @@
-(function ($) {
+(function ($, viewport) {
     'use strict';
 
     $(window).load(function () {
@@ -85,6 +85,31 @@
             gridwidth: [1130, 910, 580, 300],
             gridheight: [600, 800, 1024, 568]
         });
+
+        if( viewport.is('xs') ) {
+          // change Slider1 text because of small screen
+          $("#slide1").find(".cap-title").html("Adventurous <br> Developer");
+          $("#slide1").find(".cap-subtitle").html("\"Just keep swimming, <br> just keep swimming!\" <br> — Dory");
+          $("#slide1").find(".cap-subtitle").attr("data-voffset", "25");
+          $("#slide1").find(".cap-sub-subtitle").attr("data-voffset", "75");
+
+          $("#slide2").find(".cap-title").html("Loyal <br> Companion");
+          $("#slide2").find(".cap-subtitle").html("\"Ohana means family. <br> Family means nobody gets <br> left behind.\" — Stitch");
+          $("#slide2").find(".cap-sub-subtitle").html("Parque Arqueológico Nacional <br> de Pisac, Perú");
+          $("#slide2").find(".cap-subtitle").attr("data-voffset", "25");
+          $("#slide2").find(".cap-sub-subtitle").attr("data-voffset", "85");
+          $("#slide2").find(".cap-title").attr("data-x", "left");
+          $("#slide2").find(".cap-subtitle").attr("data-x", "left");
+          $("#slide2").find(".cap-sub-subtitle").attr("data-x", "left");
+
+          $("#slide3").find(".cap-title").html("Optimistic <br> Thinker");
+          $("#slide3").find(".cap-subtitle").html("\"When life throws you <br> a rainy day, play <br> in the puddles.\" <br> — Winnie the Pooh");
+          $("#slide3").find(".cap-subtitle").attr("data-voffset", "35");
+          $("#slide3").find(".cap-sub-subtitle").attr("data-voffset", "100");
+          $("#slide3").find(".cap-title").attr("data-x", "left");
+          $("#slide3").find(".cap-subtitle").attr("data-x", "left");
+          $("#slide3").find(".cap-sub-subtitle").attr("data-x", "left");
+        }
 
 
         // Slider1 for Jessica and Samantha
@@ -527,4 +552,4 @@
     ga('create', 'UA-103569456-1', 'auto');
     ga('send', 'pageview');
 
-})(jQuery);
+})(jQuery, ResponsiveBootstrapToolkit);

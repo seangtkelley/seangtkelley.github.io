@@ -2414,7 +2414,7 @@ footer {
     footer .contact .footer-addr {
       width: 100%;
       margin-bottom: 24px;
-      display: table-row; }
+      display: block; }
       footer .contact .footer-addr .footer-icon {
         width: 10%;
         display: table-cell;
