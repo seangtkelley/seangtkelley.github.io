@@ -87,12 +87,14 @@
         });
 
         if( viewport.is('xs') ) {
-          // change Slider1 text because of small screen
+          // change Slider1 text and image position because of small
+          $("#slide1").find(".tp-bgimg").css("background-position", "right center");
           $("#slide1").find(".cap-title").html("Adventurous <br> Developer");
           $("#slide1").find(".cap-subtitle").html("\"Just keep swimming, <br> just keep swimming!\" <br> — Dory");
           $("#slide1").find(".cap-subtitle").attr("data-voffset", "25");
           $("#slide1").find(".cap-sub-subtitle").attr("data-voffset", "75");
 
+          $("#slide2").find(".tp-bgimg").css("background-position", "left center");
           $("#slide2").find(".cap-title").html("Loyal <br> Companion");
           $("#slide2").find(".cap-subtitle").html("\"Ohana means family. <br> Family means nobody gets <br> left behind.\" — Stitch");
           $("#slide2").find(".cap-sub-subtitle").html("Parque Arqueológico Nacional <br> de Pisac, Perú");
