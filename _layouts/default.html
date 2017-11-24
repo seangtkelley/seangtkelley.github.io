@@ -4,18 +4,36 @@
     <title>{{ page.title }}</title>
 
     <!-- CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
-    <link href="assets/vendor/fontawesome/css/font-awesome.min.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
-    <link href="assets/vendor/flaticon/flaticon.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/assets/vendor/fontawesome/css/font-awesome.min.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/assets/vendor/flaticon/flaticon.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/assets/custom/css/jekyll-github-pygments.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
 
     <!-- Custom CSS -->
-    <link href="assets/custom/css/style.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+    <!--<link href="/assets/custom/css/style.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>-->
+    <link href="/assets/custom/css/blog.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
   </head>
   <body>
-    <nav>
-      <ul>
-      <li><a href="/">Home</a></li>
-      </ul>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/blog"> Blog Home </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse container" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Return to Main Page</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
 
@@ -29,7 +47,7 @@
     </footer>
 
     <!-- JS -->
-    <script type="text/javascript" src="assets/vendor/jquery/js/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/jquery/js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
