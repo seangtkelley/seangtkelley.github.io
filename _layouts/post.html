@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <div class="container">
   <div class="row">
@@ -101,98 +102,29 @@ layout: default
 					</div>
 				</div>
 			</div>-->
-			<!--<div class="comment-area">
-				<div class="comment-heading">
-					<h3>3 Thoughts</h3>
-				</div>
-				<div class="single-comment">
-					<div class="media">
-						<div class="media-left text-center">
-							<a href=""><img class="media-object" src="assets/images/reply-1.jpg" alt=""></a>
-						</div>
-						<div class="media-body">
-							<div class="media-heading">
-								<h3 class="text-uppercase">
-									<a href="">John Smith</a>
-									<a href="" class="pull-right reply-btn">reply</a>
-								</h3>
-							</div>
-							<p class="comment-date">
-								December, 02, 2017 at 5:57 PM
-							</p>
-							<p class="comment-p">
-								Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sdiam
-								voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-								gubergren, no sea takimata sanctus est.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="single-comment single-comment-reply">
-					<div class="media">
-						<div class="media-left text-center">
-							<a href=""> <img class="media-object" src="assets/images/reply-2.jpg" alt=""></a>
-						</div>
-						<div class="media-body">
-							<div class="media-heading">
-								<h3 class="text-uppercase"><a href="">Joan Coal</a></h3>
-							</div>
-							<p class="comment-date">
-								2 days ago
-							</p>
-							<p class="comment-p">
-								Labore et dolore magna aliquyam erat, sdiam voluptua. At vero eos eaccusam et justo
-								duo dolores et ea rebum. Stet clita kasd.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="single-comment">
-					<div class="media">
-						<div class="media-left text-center">
-							<a href=""> <img class="media-object" src="assets/images/reply-3.jpg" alt=""></a>
-						</div>
-						<div class="media-body">
-							<div class="media-heading">
-								<h3 class="text-uppercase"><a href="">Ricard Goff</a> <a href=""
-								                                                         class="pull-right reply-btn">reply</a>
-								</h3>
-							</div>
-							<span class="comment-date"> 5 hours ago</span>
-							<p class="comment-p">
-								Amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidu labore et
-								dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et usto duo
-								dolores et ea rebum.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>-->
-			<!--leave comment-->
-			<!--<div class="leave-comment">
-				<h4>Leave a reply</h4>
-				<form class="form-horizontal contact-form"   method="post" action="#">
-					<div class="form-group">
-						<div class="col-md-6">
-							<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-						</div>
-						<div class="col-md-6">
-							<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-md-12">
-							<input type="text" class="form-control" id="subject" name="subject" placeholder="Website url">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-md-12">
-							<textarea class="form-control" rows="6" name="message" placeholder="Write Massage" required></textarea>
-						</div>
-					</div>
-					<button type="submit" class="btn send-btn">Post Comment</button>
-				</form>
-			</div>-->
+			<div class="comment-area">
+				{% if page.comments %}
+          <div id="disqus_thread"></div>
+          <script>
+
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+          */
+          var disqus_config = function () {
+          this.page.url = {{ page.url }};  // Replace PAGE_URL with your page's canonical URL variable
+          //this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://seangtkelley-blog.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        {% endif %}
+			</div>
     </div>
   </div>
 </div>
