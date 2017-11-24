@@ -1,7 +1,16 @@
+---
+layout: post
+title: "Techniques for Reading Bitcoin Price Action"
+desc: "A comparison of price action prediction accuracy between a basic artificial neural network and a Long-Short Term Memory (LTSM) network."
+tag: "Machine Learning"
+author: "Sean Kelley"
+thumb: "/img/blog/bitcoin.jpg"
+date: 2017-11-24
+---
 
 # Techniques for Reading Bitcoin Price Action
 
-This notebook was heavily influenced by the 
+This notebook was heavily influenced by the
 
 Plotting training/val loss from this: <link from reddit keras post>
 
@@ -65,7 +74,7 @@ model.add(Dense(32, activation = 'tanh'))
 model.add(Dropout(0.1))
 model.add(Dense(32, activation = 'tanh'))
 model.add(Dropout(0.1))
-model.add(Dense(3, activation = 'softmax')) 
+model.add(Dense(3, activation = 'softmax'))
 # out shaped on df_Yt.shape[1]
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 ```
@@ -87,7 +96,7 @@ test_y_array = df_Yt.loc['2017-1-1':'2017-10-19'].values
 
 #test_Xt_array = np.reshape(test_Xt_array, (test_Xt_array.shape[0], 1, test_Xt_array.shape[1]))
 
-history = model.fit(train_Xt_array, train_y_array, epochs=epochs, batch_size=batch_size, verbose=1, 
+history = model.fit(train_Xt_array, train_y_array, epochs=epochs, batch_size=batch_size, verbose=1,
                    validation_data=(test_Xt_array, test_y_array))
 ```
 
@@ -128,7 +137,7 @@ plt.legend(['Training loss', 'Validation Loss'],fontsize=18)
 plt.xlabel('Epochs ',fontsize=16)
 plt.ylabel('Loss',fontsize=16)
 plt.title('Loss Curves',fontsize=16)
- 
+
 #Plot the Accuracy Curves
 plt.figure(figsize=[8,6])
 plt.plot(history.history['acc'],'r',linewidth=3.0)
@@ -162,7 +171,7 @@ plt.title('Accuracy Curves',fontsize=16)
 model = Sequential()
 model.add(LSTM(units = 32, activation = 'tanh', input_shape=(None, 6)))
 model.add(Dropout(0.2))
-model.add(Dense(units = 3, activation = 'softmax')) 
+model.add(Dense(units = 3, activation = 'softmax'))
 # out shaped on df_Yt.shape[1]
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 ```
@@ -198,7 +207,7 @@ test_y_array = df_Yt.loc['2017-1-1':'2017-10-19'].values
 
 test_Xt_array = np.reshape(test_Xt_array, (test_Xt_array.shape[0], 1, test_Xt_array.shape[1]))
 
-history = model.fit(train_Xt_array, train_y_array, epochs=epochs, batch_size=batch_size, verbose=1, 
+history = model.fit(train_Xt_array, train_y_array, epochs=epochs, batch_size=batch_size, verbose=1,
                    validation_data=(test_Xt_array, test_y_array))
 ```
 
@@ -230,7 +239,7 @@ plt.legend(['Training loss', 'Validation Loss'],fontsize=18)
 plt.xlabel('Epochs ',fontsize=16)
 plt.ylabel('Loss',fontsize=16)
 plt.title('Loss Curves',fontsize=16)
- 
+
 #Plot the Accuracy Curves
 plt.figure(figsize=[8,6])
 plt.plot(history.history['acc'],'r',linewidth=3.0)

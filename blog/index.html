@@ -2,11 +2,236 @@
 layout: default
 title: Sean Kelley's Blog
 ---
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			{% for post in site.posts %}
+				<article class="single-blog">
+					<div class="post-thumb">
+						<a href="{{ post.url }}"><img src="{{ post.thumb }}" alt=""></a>
+					</div>
+					<div class="post-content">
+						<div class="entry-header text-left text-uppercase">
+							<a href="" class="post-cat">{{ post.tag }}</a>
+							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+						</div>
+						<div class="entry-content">
+							<p>{{ post.desc }}</p>
+						</div>
+						<div class="continue-reading text-left text-uppercase">
+							<a href="{{ post.url }}">Continue Reading</a>
+						</div>
+						<div class="post-meta">
+							<ul class="pull-left list-inline author-meta">
+								<li class="author">By <a href="#">{{ post.author }} </a></li>
+								<li class="date"> On {{ post.date | date: '%B %d, %Y' }} </li>
+							</ul>
+							<ul class="pull-right list-inline social-share">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<!--<li><a href=""><i class="fa fa-pinterest"></i></a></li>-->
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<!--<li><a href=""><i class="fa fa-instagram"></i></a></li>-->
+							</ul>
+						</div>
+					</div>
+				</article>
+			{% endfor %}
+			<div class="post-pagination clearfix">
+				<ul class="pagination text-left">
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="kotha-sidebar material-sidebar">
+				<aside class="widget about-me-widget  text-center">
+					<div class="about-me-content">
+						<div class="about-me-img">
+							<img src="/img/blog/headshot.jpg" alt="" class="img-me img-circle">
+							<h2 class="text-uppercase">Sean Kelley</h2>
+							<p>CS+Math Undergrad at UMass Amherst '20 | Incoming Intern at Microsoft ('18) | Excited about Data Science, ML, traveling and language.</p>
+						</div>
+					</div>
+					<div class="social-share">
+						<ul class="list-inline">
+							<!--<li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a class="s-twitter" href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a></li>-->
+							<li><a class="s-linkedin" href="https://linkedin.com/in/seangtkelley"><i class="fa fa-linkedin"></i></a></li>
+							<li><a class="s-github" href="https://github.com/seangtkelley"><i class="fa fa-github"></i></a></li>
+							<!--<li><a class="s-instagram" href=""><i class="fa fa-instagram"></i></a></li>-->
+						</ul>
+					</div>
+				</aside>
+				<!--<aside class="widget news-letter-widget">
+					<h2 class="widget-title text-uppercase text-center">Get Newsletter</h2>
+					<form action="#">
+						<input type="email" placeholder="Your email address" required>
+						<input type="submit" value="Subscribe Now"
+						       class="text-uppercase text-center btn btn-subscribe">
+					</form>
+				</aside>-->
+				<aside class="widget widget-popular-post">
+					<h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+					<ul>
+						{% for post in site.posts %}
+							<li>
+								<a href="{{ post.url }}" class="popular-img"><img src="{{ post.thumb }}" alt=""></a>
+								<div class="p-content">
+									<h4><a href="{{ post.url }}" class="text-uppercase">{{ post.title }}</a></h4>
+									<span class="p-date">{{ post.date | date: '%B %d, %Y' }}</span>
+								</div>
+							</li>
+						{% endfor %}
+					</ul>
+				</aside>
+				<!--<aside class="widget latest-post-widget">
+					<h2 class="widget-title text-uppercase text-center">Latest Posts</h2>
+					<ul>
+						<li class="media">
+							<div class="media-left">
+								<a href="#" class="popular-img"><img src="assets/images/recent-1.jpg" alt="">
+								</a>
+							</div>
+							<div class="latest-post-content">
+								<h2 class="text-uppercase"><a href="#">A Theme to Tell Stories</a></h2>
+								<p>April 20, 2017</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-left">
+								<a href="#" class="popular-img"><img src="assets/images/recent-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="latest-post-content">
+								<h2 class="text-uppercase"><a href="#">Just Wondering at Beach</a></h2>
+								<p>May 27, 2017</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-left">
+								<a href="#" class="popular-img"><img src="assets/images/recent-3.jpg" alt="">
+								</a>
+							</div>
+							<div class="latest-post-content">
+								<h2 class="text-uppercase"><a href="#">Lorem Ipsum Dolor sit amet</a></h2>
+								<p>April 20, 2017</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-left">
+								<a href="#" class="popular-img"><img src="assets/images/recent-4.jpg" alt="">
+								</a>
+							</div>
+							<div class="latest-post-content">
+								<h2 class="text-uppercase"><a href="#">Lorem Ipsum Dolor sit amet</a></h2>
+								<p>May 27, 2017</p>
+							</div>
+						</li>
+					</ul>
+				</aside>-->
+				<!--<aside class="widget insta-widget">
+					<h2 class="widget-title text-uppercase text-center">INSTAGRAM FEED</h2>
+					<div class="instagram-feed">
+						<div class="single-instagram">
+							<a href="">
+								<img src="assets/images/ft-insta-1.jpg" alt="">
+							</a>
+							<div class="insta-overlay">
+								<div class="insta-meta">
+									<ul class="list-inline text-center">
+										<li><a href=""><i class="fa fa-heart-o"></i></a> 325</li>
+										<li><a href=""><i class="fa fa-comment-o"></i></a> 20</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="insta-link"></a>
+						</div>
+						<div class="single-instagram">
+							<a href="">
+								<img src="assets/images/ft-insta-6.jpg" alt="">
+							</a>
+							<div class="insta-overlay">
+								<div class="insta-meta">
+									<ul class="list-inline text-center">
+										<li><a href=""><i class="fa fa-heart-o"></i></a> 325</li>
+										<li><a href=""><i class="fa fa-comment-o"></i></a> 20</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="insta-link"></a>
+						</div>
+						<div class="single-instagram">
+							<a href="">
+								<img src="assets/images/ft-insta-4.jpg" alt="">
+							</a>
+							<div class="insta-overlay">
+								<div class="insta-meta">
+									<ul class="list-inline text-center">
+										<li><a href=""><i class="fa fa-heart-o"></i></a> 325</li>
+										<li><a href=""><i class="fa fa-comment-o"></i></a> 20</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="insta-link"></a>
+						</div>
+						<div class="single-instagram">
+							<a href="">
+								<img src="assets/images/ft-insta-3.jpg" alt="">
+							</a>
+							<div class="insta-overlay">
+								<div class="insta-meta">
+									<ul class="list-inline text-center">
+										<li><a href=""><i class="fa fa-heart-o"></i></a> 325</li>
+										<li><a href=""><i class="fa fa-comment-o"></i></a> 20</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="insta-link"></a>
+						</div>
+						<div class="single-instagram">
+							<a href="">
+								<img src="assets/images/ft-insta-7.jpg" alt="">
+							</a>
+							<div class="insta-overlay">
+								<div class="insta-meta">
+									<ul class="list-inline text-center">
+										<li><a href=""><i class="fa fa-heart-o"></i></a> 325</li>
+										<li><a href=""><i class="fa fa-comment-o"></i></a> 20</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="insta-link"></a>
+						</div>
+						<div class="single-instagram">
+							<a href="">
+								<img src="assets/images/ft-insta-8.jpg" alt="">
+							</a>
+							<div class="insta-overlay">
+								<div class="insta-meta">
+									<ul class="list-inline text-center">
+										<li><a href=""><i class="fa fa-heart-o"></i></a> 325</li>
+										<li><a href=""><i class="fa fa-comment-o"></i></a> 20</li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="insta-link"></a>
+						</div>
+					</div>
+				</aside>-->
+				<aside class="widget add-widget">
+					<h2 class="widget-title text-uppercase text-center">Advertisement</h2>
 
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+					<div class="add-image">
+						<a href=""><img src="assets/images/add-image.jpg" alt=""></a>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+</div>
