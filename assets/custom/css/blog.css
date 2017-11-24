@@ -1231,6 +1231,9 @@ footer {
         margin-bottom: 0; }
   .kotha-sidebar .widget.add-widget img {
     width: 100%; }
+  .kotha-sidebar .widget.dev-widget {
+    text-align: center;
+  }
 
 /*instagram css*/
 .single-instagram {
