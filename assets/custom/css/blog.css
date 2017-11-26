@@ -29,6 +29,9 @@ a {
   -o-transition: all 0.33s;
   transition: all 0.33s;
   line-height: 1.4; }
+p > a {
+  color: #337ab7;
+}
   a:hover {
     color: #da521e;
     text-decoration: none; }
@@ -1351,7 +1354,10 @@ footer {
     overflow: hidden;
     padding: 40px; }
     .single-blog .post-content .entry-header {
-      margin: 0 auto 22px; }
+      margin: 0 auto 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px dashed lightgrey;
+    }
       .single-blog .post-content .entry-header .post-cat, .single-blog .post-content .entry-header .features-content .marketing-promo-box .promo-tag, .features-content .marketing-promo-box .single-blog .post-content .entry-header .promo-tag, .single-blog .magazine-blog .boxed .magazine-content .feature-post .post-content .entry-header .entry-meta .tag, .magazine-blog .boxed .magazine-content .feature-post .single-blog .post-content .entry-header .entry-meta .tag, .single-blog .magazine-blog .boxed .magazine-content .feature-post .post-content .entry-meta .entry-header .tag, .magazine-blog .boxed .magazine-content .feature-post .single-blog .post-content .entry-meta .entry-header .tag {
         color: #da521e;
         display: inline-block;
