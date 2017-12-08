@@ -1345,8 +1345,13 @@ footer {
             color: #aaaaaa; }
             .single-blog.marketing-post .post-content .post-meta .author-meta li a:hover {
               color: #da521e; }
+  .single-blog .post-thumb {
+    overflow-y: hidden;
+    max-height: 830px;
+  }
   .single-blog .post-thumb img {
     width: 100%; }
+  .single-blog .
 .single-blog .post-thumb iframe{
   width: 100%;
 }
