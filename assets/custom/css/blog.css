@@ -21,7 +21,7 @@ body {
   -moz-font-smoothing: antialiased; }
 
 a {
-  color: #444;
+  color: #337ab7;
   text-decoration: none;
   -webkit-transition: all 0.33s;
   -moz-transition: all 0.33s;
@@ -39,7 +39,7 @@ p > a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: "Oswald", sans-serif;
-  margin-top: 0; }
+  margin-top: 1.0em; }
 
 html {
   height: 100%;
