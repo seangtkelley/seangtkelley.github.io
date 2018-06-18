@@ -45,7 +45,7 @@ cf.set_config_file(world_readable=True, offline=True)
     [nltk_data]   Package stopwords is already up-to-date!
 
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="//cdn.plot.ly/plotly-latest.min.js"></script>
 
 
 For my own sanity, I split my tasks into two projects: `School` for school related tasks and, `Tasks` for everything else. `My Personal Tasks` is the default personal tasks project and is what I used before I created the `Tasks` project.
