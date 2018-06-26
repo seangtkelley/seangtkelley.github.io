@@ -2678,6 +2678,10 @@ section.light {
   -o-transition-property: height, width;
   transition-property: height, width; }
 
+.grid-item figure {
+  height: 218px;
+}
+
 .portfolio-details {
   padding: 14px; }
 
