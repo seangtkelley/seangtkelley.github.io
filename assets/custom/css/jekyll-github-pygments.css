@@ -4,7 +4,7 @@
  */
 
 .highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
-div:not(.language-python) > pre {
+.highlighter-rouge:not(.language-python) pre {
   max-height: 336px;
   overflow-y: auto;
   border: 1px solid #009999;
