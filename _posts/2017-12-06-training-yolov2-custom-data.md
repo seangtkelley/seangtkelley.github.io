@@ -15,7 +15,7 @@ as Ubuntu or Linux Mint. For RPM based distros, the commands will be very simila
 look up the packages and many times it's just a matter of using `yum` or `dnf` instead of `apt-get`.
 
 Unfortunately, I don't do any development on Windows or Mac so I am unformiliar with how 
-the process would work on those platforms. Feel free to leave your advice to those users.
+the process would work on those platforms. Feel free to leave your advice for those users.
 
 ### Build Tools
 

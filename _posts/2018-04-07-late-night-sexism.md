@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Visualizing Sexism in Conan O'Brien's YouTube Video Titles Using Wordclouds"
-desc: "Late night television video clips dominate my consumption habits on youtube. While watching these hosts, I started to notice O'Brien's videos appearing in the recommended videos. At first, I dismissed them as normal considering I was watching a considerable amount of late night shows. However, I began to notice a difference in the way O'Brien (or most likely his team) titles the interview videos. When the guest is man, the titles seem normal, usually something to do with a book they're releasing or a movie their in. But when the host is woman, the titles are noticeably more sexual and provocative."
+desc: "Late night television video clips dominate my consumption habits on youtube. While watching these hosts, I started to notice O'Brien's videos appearing in the recommended videos. At first, I dismissed them as normal considering I was watching a considerable amount of late night shows. However, I began to notice a difference in the way O'Brien (or most likely his team) titles the interview videos. When the guest is a man, the titles seem normal. It is usually something to do with a book they're releasing or a movie they're in. But when the host is a woman, the titles are noticeably more sexual and provocative."
 tag: "Data Analysis"
 author: "Sean Kelley"
 thumb: "/img/blog/2018-04-07-late-night-sexism/conan-banner.jpg"
 date: 2018-04-07
 ---
 
-I'll admit I spend considerable amount of time on YouTube. I consume mountains of videos ranging from [eurobeat mixes](https://www.youtube.com/watch?v=cq4s8hrTNT8), to [dash cam montages](https://www.youtube.com/user/DashCamOwnersAustral), to [tensorflow tutorials](https://www.youtube.com/watch?v=2FmcHiLCwTU), to [political video essays](https://www.youtube.com/watch?v=EvXROXiIpvQ). However, some of my favorite content are the clips posted by late night television shows. Colbert, Meyers, Noah, and Oliver always put a funny spin on modern politics and present some compelling interviews.
+I'll admit I a spend considerable amount of time on YouTube. I consume mountains of videos ranging from [eurobeat mixes](https://www.youtube.com/watch?v=cq4s8hrTNT8), to [dash cam montages](https://www.youtube.com/user/DashCamOwnersAustral), to [tensorflow tutorials](https://www.youtube.com/watch?v=2FmcHiLCwTU), to [political video essays](https://www.youtube.com/watch?v=EvXROXiIpvQ). However, some of my favorite content are the clips posted by late night television shows. Colbert, Meyers, Noah, and Oliver always put a funny spin on modern politics and present some compelling interviews.
 
 While watching these hosts, I started to notice O'Brien's videos appearing in the recommended videos. At first, I dismissed them as normal considering I was watching a considerable amount of late night shows. However, I began to notice a difference in the way O'Brien (or most likely his team) titles the interview videos. When the guest is man, the titles seem normal, usually something to do with a book they're releasing or a movie their in. But when the host is woman, the titles are noticeably more sexual and provocative.
 
@@ -69,7 +69,7 @@ playlist[21].title
 
 
 
-Next, in order to determine if the video is an interview or not, we will [use a list of names collected from the census](https://stackoverflow.com/questions/32545180/from-of-list-of-strings-identify-which-are-human-names-and-which-are-not). The process will of course not be entirely accurate because not all interview start with the name of the guest and "The" is technically a name.
+Next, in order to determine if the video is an interview or not, we will [use a list of names collected from the census](https://stackoverflow.com/questions/32545180/from-of-list-of-strings-identify-which-are-human-names-and-which-are-not). The process will of course not be entirely accurate because of annomalies in the titles. For example, not all interviews start with the name of the guest and "The" is technically a name.
 
 Take note that in the original stackoverflow post, one of the files is in table format and not csv. I was having trouble importing that with pandas so I simply used Google Sheets to convert it to csv.
 
@@ -137,7 +137,7 @@ female_text = ' '.join([word for word in female_text.split() if word not in cach
 male_text = ' '.join([word for word in male_text.split() if word not in cachedStopWords])
 ```
 
-Finally, we can create the wordclouds using the [amueller](http://amueller.github.io/)'s [word_cloud library](http://amueller.github.io/word_cloud/index.html).
+Finally, we can create the wordclouds using [amueller](http://amueller.github.io/)'s [word_cloud library](http://amueller.github.io/word_cloud/index.html).
 
 To enhance the visualization, I masked the word clouds with the gender signs commonly used for bathrooms in the US.
 
