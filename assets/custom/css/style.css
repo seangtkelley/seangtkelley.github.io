@@ -110,128 +110,6 @@
   background-position: center;
   background-size: cover; }
 
-.bg-jessica-01 {
-  background: url("../images/01-jessica/backgrounds/01.png"); }
-
-.bg-jessica-02 {
-  background: url("../images/01-jessica/backgrounds/02.png"); }
-
-.bg-jessica-03 {
-  background: url("../images/01-jessica/backgrounds/03.jpg"); }
-
-.bg-jessica-04 {
-  background: url("../images/01-jessica/backgrounds/04.jpg"); }
-
-.bg-jessica-05 {
-  background: url("../images/01-jessica/backgrounds/05.jpg"); }
-
-.bg-jessica-06 {
-  background: url("../images/01-jessica/backgrounds/06.jpg"); }
-
-.bg-jessica-07 {
-  background: url("../images/01-jessica/backgrounds/07.jpg"); }
-
-.jessica-timeline-01 {
-  background: url("../images/01-jessica/timeline/timeline-1-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.jessica-timeline-02 {
-  background: url("../images/01-jessica/timeline/timeline-2-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.jessica-timeline-03 {
-  background: url("../images/01-jessica/timeline/timeline-3-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.jessica-timeline-04 {
-  background: url("../images/01-jessica/timeline/timeline-4-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.bg-startup-00 {
-  background: url("../images/04-startup/backgrounds/bg00.jpg"); }
-
-.bg-startup-01 {
-  background: url("../images/04-startup/backgrounds/bg01.jpg"); }
-
-.bg-startup-02 {
-  background: url("../images/04-startup/backgrounds/bg02.jpg"); }
-
-.bg-startup-03 {
-  background: url("../images/04-startup/backgrounds/bg03.jpg"); }
-
-.bg-startup-04 {
-  background: url("../images/04-startup/backgrounds/bg04.jpg"); }
-
-.bg-startup-05 {
-  background: url("../images/04-startup/backgrounds/bg05.png"); }
-
-.startup-timeline-01 {
-  background: url("../images/04-startup/timeline/timeline-1.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.startup-timeline-02 {
-  background: url("../images/04-startup/timeline/timeline-2.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.startup-timeline-03 {
-  background: url("../images/04-startup/timeline/timeline-3.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.startup-timeline-04 {
-  background: url("../images/04-startup/timeline/timeline-4.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.startup-featured-01 {
-  background: url("../images/04-startup/featured/02-1.jpg"); }
-
-.bg-samantha-00 {
-  background: url("../images/03-samantha/backgrounds/bg00.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-.bg-samantha-01 {
-  background: url("../images/03-samantha/backgrounds/bg01.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-.bg-samantha-02 {
-  background: url("../images/03-samantha/backgrounds/bg02.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-.bg-samantha-03 {
-  background: url("../images/03-samantha/backgrounds/bg03.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-.timeline-bg01-02 {
-  background: url("../images/03-samantha/timeline/timeline-1-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.timeline-bg02-02 {
-  background: url("../images/03-samantha/timeline/timeline-2-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.timeline-bg03-02 {
-  background: url("../images/03-samantha/timeline/timeline-3-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.timeline-bg04-02 {
-  background: url("../images/03-samantha/timeline/timeline-4-01.jpg");
-  background-position: center;
-  background-size: cover; }
-
 #mobile {
   background: url("../images/mobile-s.png");
   background-position: bottom center;
@@ -1544,42 +1422,6 @@ ul.sf-menu > li, .sf-menu > li > a {
     color: #a7a7a7; }
   .mobmenu-john .icon-list .socials li:hover i:before {
     color: #E84855; }
-
-.mobmenu-jessica {
-  background: #406092; }
-  .mobmenu-jessica .icon-list .menu-item a {
-    color: #fff; }
-    .mobmenu-jessica .icon-list .menu-item a i {
-      color: #fff; }
-  .mobmenu-jessica .icon-list a:hover, .mobmenu-jessica .icon-list a:focus {
-    color: #E6FF8C; }
-    .mobmenu-jessica .icon-list a:hover i:before, .mobmenu-jessica .icon-list a:focus i:before {
-      color: #E6FF8C; }
-  .mobmenu-jessica .icon-list .m-usermenu {
-    background: rgba(255, 255, 255, 0.1);
-    border: none; }
-  .mobmenu-jessica .icon-list .socials li i:before {
-    color: #f2f2f2; }
-  .mobmenu-jessica .icon-list .socials li:hover i:before {
-    color: #E6FF8C; }
-
-.mobmenu-samantha {
-  background: #43a5e6; }
-  .mobmenu-samantha .icon-list .menu-item a {
-    color: #fff; }
-    .mobmenu-samantha .icon-list .menu-item a i {
-      color: #fff; }
-  .mobmenu-samantha .icon-list a:hover, .mobmenu-samantha .icon-list a:focus {
-    color: #E6FF8C; }
-    .mobmenu-samantha .icon-list a:hover i:before, .mobmenu-samantha .icon-list a:focus i:before {
-      color: #E6FF8C; }
-  .mobmenu-samantha .icon-list .m-usermenu {
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.3); }
-  .mobmenu-samantha .icon-list .socials li i:before {
-    color: #f2f2f2; }
-  .mobmenu-samantha .icon-list .socials li:hover i:before {
-    color: #E6FF8C; }
 
 /*------------------------------------------------------------------
 [6. Header Styles]
@@ -3930,15 +3772,7 @@ Vertical Timeline
 @media (max-width: 992px) {
   #promo {
     background: none; } }
-#promo-jessica {
-  background: url("../images/01-jessica/backgrounds/06.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
 
-@media (max-width: 992px) {
-  #promo-jessica {
-    background: none; } }
 /* Photocard */
 #photocard .carousel-control .tp-leftarrow {
   top: 50%;

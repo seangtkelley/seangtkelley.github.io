@@ -426,54 +426,6 @@ ul.sf-menu > li, .sf-menu > li > a {  border: none;  text-align: left;  }
   }
 }
 
-.mobmenu-jessica {
-  background: #406092;
-  .icon-list {
-    .menu-item a {
-      color: $color00;
-      i {color: $color00;}
-    }
-    a:hover, a:focus {
-      color: #E6FF8C;
-      i:before {color: #E6FF8C;}
-    }
-    .m-usermenu {
-      background: rgba(255,255,255,0.1);
-      border: none ;
-    }
-    .socials {
-      li {
-        i:before {  color: $color01;  }
-        &:hover i:before {color: #E6FF8C;}
-      }
-    }
-  }
-}
-
-.mobmenu-samantha {
-  background: $accentcolor;
-  .icon-list {
-    .menu-item a {
-      color: $color00;
-      i {color: $color00;}
-    }
-    a:hover, a:focus {
-      color: #E6FF8C;
-      i:before {color: #E6FF8C;}
-    }
-    .m-usermenu {
-      background: none;
-      border: 1px solid rgba(255,255,255,0.3);
-    }
-    .socials {
-      li {
-        i:before {  color: $color01;  }
-        &:hover i:before {color: #E6FF8C;}
-      }
-    }
-  }
-}
-
 
 
 /*------------------------------------------------------------------
