@@ -85,7 +85,17 @@
   background-size: cover; }
 
 .work-timeline-05 {
-  background: url("../../../img/microsoft-logo.jpg");
+  background: url("../../../img/ms-garage-team.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.work-timeline-06 {
+  background: url("../../../img/umass-cs-building.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.work-timeline-07 {
+  background: url("../../../img/ms-logo.jpg");
   background-position: center;
   background-size: cover; }
 
