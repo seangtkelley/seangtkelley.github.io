@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Asana Data Revisited: Fall 2018 Semester In-Review"
-desc: "I previously did a quick analysis of the data from the Asana, the website I use to keep track of all my tasks. \n\n Since it's been about 6 months since then, I thought it would be interesting to take another look to see which trends remained and which changed."
+title: "Asana Data Revisited: Fall 2018 Semester In Review"
+desc: "I previously did a quick analysis of the data from Asana, the website I use to keep track of all my tasks. \n\n Since it's been about 6 months since then, I thought it would be interesting to take another look to see which trends remained and which changed."
 tag: "Data Analysis"
 author: "Sean Kelley"
 thumb: "/img/blog/2018-06-05-asana-exploration/asanalogo.png"
 date: 2019-01-07
 ---
 
-I previously did a [quick analysis](http://seangtkelley.me/blog/2018/06/05/asana-exploration) of the data from the Asana, the website I use to keep track of all my tasks.
+I previously did a [quick analysis](http://seangtkelley.me/blog/2018/06/05/asana-exploration) of the data from Asana, the website I use to keep track of all my tasks.
 
-Since it's been about 6 months since then, I thought it would be interesting to take another look to see which trends remained and which changed.
+Since it's been about 6 months, I thought it would be interesting to take another look to see which trends remained and which changed.
 
 
 ```python
@@ -38,11 +38,11 @@ cf.set_config_file(world_readable=True, offline=True)
 
 <script src="//cdn.plot.ly/plotly-latest.min.js"></script>
 
-Notice I import a module called `custom_utils`. I recently started a project to better keep track of my personal health and development and I found the need to reuse functions often. The file can be found [here](https://github.com/seangtkelley/personal-health-tracking/blob/master/lib/custom_utils.py).
+Notice I import a module called `custom_utils`. I recently started a project to keep track of my personal health and development and I found the need to reuse functions often. The file can be found [here](https://github.com/seangtkelley/personal-health-tracking/blob/master/lib/custom_utils.py).
 
 ### Data
 
-Unlike last time, I'll only be pulling the tasks related to school. Just before the start of last semester (Fall 2018), I created a new project using the "Boards" type so that I could see all my school tasks at once in columns for each class.
+Unlike last time, I'll only be pulling the tasks related to school. Just before the start of last semester (Fall 2018), I created a new project using the [Boards](https://asana.com/guide/help/views/boards) layout. This allows me to better organize my task by class.
 
 First, let's load that data.
 
@@ -447,7 +447,7 @@ all_df.head()
 
 
 
-To help retain our sanity, let's define colors for each semester for graphs.
+To help retain our sanity, let's define colors for each semester.
 
 
 ```python
@@ -498,7 +498,7 @@ iplot(fig, filename='DOW Comparison')
 <div id="69cb7eeb-535d-4882-85ca-bee917f72e78" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">Plotly.newPlot("69cb7eeb-535d-4882-85ca-bee917f72e78", [{"marker": {"color": "rgba(63, 81, 191, 1.0)"}, "name": "Old Data", "x": [1, 0, 2, 6, 3, 4, 5], "y": [0.19283065512978986, 0.18294190358467244, 0.14709517923362175, 0.14091470951792337, 0.1273176761433869, 0.11372064276885044, 0.09517923362175525], "type": "bar", "uid": "632d1ee7-3a78-4624-ae5b-556e3c88b446"}, {"marker": {"color": "rgba(33, 150, 255, 1.0)"}, "name": "Fall 18", "x": [2, 4, 0, 5, 1, 3, 6], "y": [0.24166666666666667, 0.18333333333333332, 0.16666666666666666, 0.15, 0.13333333333333333, 0.075, 0.05], "type": "bar", "uid": "481bdfb2-4ad0-4939-a287-5f4aaa296135"}], {"barmode": "group"}, {"showLink": true, "linkText": "Export to plot.ly"});</script><script type="text/javascript">window.addEventListener("resize", function(){window._Plotly.Plots.resize(document.getElementById("69cb7eeb-535d-4882-85ca-bee917f72e78"));});</script>
 
 
-This was quite a surprise. The days when I created tasks seems to have changed significantly this semester. 
+This was quite a surprise. The days when I created tasks seems to have changed somewhat this semester. 
 
 Let's check if the overall trend has remained the same.
 
@@ -528,7 +528,7 @@ iplot(fig, filename='DOW Comparison')
 <div id="6a090126-8dc9-4d89-bf3a-414d8a2649f3" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">Plotly.newPlot("6a090126-8dc9-4d89-bf3a-414d8a2649f3", [{"marker": {"color": "rgba(219, 64, 82, 0.7)"}, "name": "All Data", "x": [1, 0, 2, 6, 4, 3, 5], "y": [0.18514531754574812, 0.18083961248654468, 0.15931108719052745, 0.12917115177610333, 0.12271259418729817, 0.12055974165769645, 0.10226049515608181], "type": "bar", "uid": "3d1ab8d5-94ec-4b79-acf0-d39f9feab79a"}], {"barmode": "group"}, {"showLink": true, "linkText": "Export to plot.ly"});</script><script type="text/javascript">window.addEventListener("resize", function(){window._Plotly.Plots.resize(document.getElementById("6a090126-8dc9-4d89-bf3a-414d8a2649f3"));});</script>
 
 
-There are definitely some small changes. Thursday caught up to Wednesday and Monday is catching up to Tuesday. However, the overall trend of the majority of task creation occuring in the beginning of the week remains strong.
+There are definitely some small changes. Thursday caught up to Wednesday and Monday is catching up to Tuesday. However, the overall trend that I create the majority of my tasks at the beginning of the week remains strong.
 
 ### Completion Time
 
@@ -573,7 +573,7 @@ iplot(fig, filename='grouped-bar')
 <div id="525466ec-901c-4a1e-a061-851ffdf75b9f" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">Plotly.newPlot("525466ec-901c-4a1e-a061-851ffdf75b9f", [{"marker": {"color": "rgba(63, 81, 191, 1.0)"}, "name": "Old Data", "x": [1, 0, 2, 4, 3, 5, 7, 6, 11, 8, 10, 12, 9, 15, 29, 13, 17, 14, 23, 16, 22, 19, 21, 27, 25, 26], "y": [0.22371967654986524, 0.1940700808625337, 0.13881401617250674, 0.09164420485175202, 0.09164420485175202, 0.0660377358490566, 0.0431266846361186, 0.03234501347708895, 0.018867924528301886, 0.01752021563342318, 0.012129380053908356, 0.01078167115902965, 0.01078167115902965, 0.009433962264150943, 0.008086253369272238, 0.006738544474393531, 0.004043126684636119, 0.004043126684636119, 0.0026954177897574125, 0.0026954177897574125, 0.0026954177897574125, 0.0026954177897574125, 0.0013477088948787063, 0.0013477088948787063, 0.0013477088948787063, 0.0013477088948787063], "type": "bar", "uid": "c179531e-5497-437a-9179-478a8508f976"}, {"marker": {"color": "rgba(33, 150, 255, 1.0)"}, "name": "Fall 18", "x": [3, 1, 0, 2, 7, 4, 5, 9, 6, 12, 13, 11, 8, 14, 17, 19, 20, 27, 15, 25], "y": [0.16666666666666666, 0.15833333333333333, 0.125, 0.1, 0.08333333333333333, 0.075, 0.058333333333333334, 0.03333333333333333, 0.03333333333333333, 0.03333333333333333, 0.016666666666666666, 0.016666666666666666, 0.016666666666666666, 0.016666666666666666, 0.016666666666666666, 0.016666666666666666, 0.008333333333333333, 0.008333333333333333, 0.008333333333333333, 0.008333333333333333], "type": "bar", "uid": "0370f679-0f2c-45b5-86bf-57513ee42599"}], {"barmode": "group"}, {"showLink": true, "linkText": "Export to plot.ly"});</script><script type="text/javascript">window.addEventListener("resize", function(){window._Plotly.Plots.resize(document.getElementById("525466ec-901c-4a1e-a061-851ffdf75b9f"));});</script>
 
 
-Now this is interesting! For the most part, the time it takes me to complete tasks seems to have remained relatively the same. However, this semester it seems I create more tasks that take around a week to complete. In addition, I made less tasks that were completed in the same day.
+Now this is interesting! For the most part, the time it takes me to complete tasks seems to have remained relatively the same. However, this semester it seems I create more tasks that take around a week to complete. In addition, I made less tasks that were completed on the same day.
 
 Next, like last time, let's see if we can figure out what type of tasks usually take longer to complete. I will once again use the fantastic [word_cloud library](http://amueller.github.io/word_cloud/index.html) by [amueller](http://amueller.github.io/).
 
@@ -828,4 +828,4 @@ iplot(data, filename='due date freq')
 
 
 ## Conclusion
-Hopefully this post show the motivation and potential benefit of revisiting a previous analysis in an attempt to find an significant changes. In the context of personal development, doing so can help you track your progress and achieve your goals. I still definitely need to put more effort into taking notes on time!
+Hopefully this post show the motivation and potential benefit of revisiting a previous analysis in an attempt to find any significant changes. In the context of personal development, doing so can help you track your progress and achieve your goals. I still definitely need to put more effort into taking notes on time!
