@@ -762,7 +762,7 @@ axes[3, 1].axis("off")
 ![png](/img/blog/2019-01-07-asana-revisited/output_26_1.png)
 
 
-## Semester Specific Analysis
+## Busiest Class this Semester
 
 Since I began to track the class for each task, we can check out which class was my busiest this semester.
 
@@ -804,7 +804,7 @@ iplot(fig, filename='donut')
 <div id="fe532444-711f-4ee1-bd83-bd339b2ccb2c" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">Plotly.newPlot("fe532444-711f-4ee1-bd83-bd339b2ccb2c", [{"domain": {"x": [0, 1], "y": [0, 1]}, "hole": 0.4, "hoverinfo": "label+percent+name", "labels": ["Research", "CS 311", "Math 551", "Spanish 322", "CS 383"], "name": "Fall 18", "values": [39, 26, 22, 19, 14], "type": "pie", "uid": "f66a0ae9-9c03-42f9-adcc-b4978981fca6"}], {"annotations": [{"font": {"size": 15}, "showarrow": false, "text": "Fall 2018", "x": 0.5, "y": 0.5}]}, {"showLink": true, "linkText": "Export to plot.ly"});</script><script type="text/javascript">window.addEventListener("resize", function(){window._Plotly.Plots.resize(document.getElementById("fe532444-711f-4ee1-bd83-bd339b2ccb2c"));});</script>
 
 
-## Due Date Frequency
+## Due Date Frequency this Semester
 
 We can also see when my tasks were due.
 
