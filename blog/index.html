@@ -5,7 +5,28 @@ title: Sean Kelley's Blog
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8">
-			{% for post in site.posts %}
+			<div class="post-pagination clearfix" style="margin-bottom: 30px">
+				<ul class="pagination text-left">
+					{% if paginator.previous_page %}
+						<li><a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a></li>
+					{% endif %}
+					
+					{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+							<li class="active"><a href="#">{{ page }}</a></li>
+						{% elsif page == 1 %}
+							<li><a href="/blog/">{{ page }}</a></li>
+						{% else %}
+							<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+						{% endif %}
+					{% endfor %}
+
+					{% if paginator.next_page %}
+						<li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
+					{% endif %}
+				</ul>
+			</div>
+			{% for post in paginator.posts %}
 				<article class="single-blog">
 					<div class="post-thumb">
 						<a href="{{ post.url }}"><img src="{{ post.thumb }}" alt=""></a>
@@ -37,8 +58,23 @@ title: Sean Kelley's Blog
 			{% endfor %}
 			<div class="post-pagination clearfix">
 				<ul class="pagination text-left">
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+					{% if paginator.previous_page %}
+						<li><a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a></li>
+					{% endif %}
+					
+					{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+							<li class="active"><a href="#">{{ page }}</a></li>
+						{% elsif page == 1 %}
+							<li><a href="/blog/">{{ page }}</a></li>
+						{% else %}
+							<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+						{% endif %}
+					{% endfor %}
+
+					{% if paginator.next_page %}
+						<li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
+					{% endif %}
 				</ul>
 			</div>
 		</div>
