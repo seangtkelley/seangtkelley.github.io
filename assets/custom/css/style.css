@@ -125,6 +125,12 @@
   background-position: center;
   background-size: cover; }
 
+.vol-timeline-06 {
+  background: url("https://supportkind.org/wp-content/themes/KIND/assets/images/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 #mobile {
   background: url("../images/mobile-s.png");
   background-position: bottom center;
