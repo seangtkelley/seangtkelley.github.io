@@ -4320,3 +4320,40 @@ body.food .kotha-sidebar .widget.about-me-widget {
 .table > thead > tr > th {
     text-align: left;
 }
+
+.blog-highlights {
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+}
+
+.blog-highlights article {
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.blog-highlights .post-thumb {
+    height: 146px;
+    overflow: hidden;
+}
+
+.blog-highlights .post-content {
+    padding: 10px;
+}
+
+.blog-highlights .entry-header {
+    padding: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+}
+
+.blog-highlights .entry-header h2 {
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 450px) {
+    .blog-highlights {
+        display: none;
+    }
+}

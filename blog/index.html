@@ -5,75 +5,117 @@ title: Sean Kelley's Blog
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8">
+			{% if paginator.page == 1 %}
+			<div class="container-fluid blog-highlights">
+				<h3 class="text-center text-uppercase">Blog Highlights</h3>
+				<div class="col-sm-4">
+					<article class="single-blog">
+						<div class="post-thumb">
+							<a href="/blog/2019/01/19/better-runner"><img src="/img/blog/2019-01-19-better-runner/marathoners-running.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+							<div class="entry-header text-center text-uppercase">
+								<h2><a href="/blog/2019/01/19/better-runner">Becoming a Better Runner using data</a></h2>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-sm-4">
+					<article class="single-blog">
+						<div class="post-thumb">
+							<a href="blog/2018/04/07/late-night-sexism"><img src="/img/blog/2018-04-07-late-night-sexism/conan_comparison.png" alt=""></a>
+						</div>
+						<div class="post-content">
+							<div class="entry-header text-center text-uppercase">
+								<h2><a href="blog/2018/04/07/late-night-sexism">Visualizing Sexism in Conan O'Brien's YouTube Video Titles Using Wordclouds</a></h2>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-sm-4">
+					<article class="single-blog">
+						<div class="post-thumb">
+							<a href="/blog/2017/12/23/using-custom-yolov2-model-on-android"><img src="/img/blog/2017-12-06-using-custom-yolov2-model-on-android/exit-sign-detection-cropped.png" alt=""></a>
+						</div>
+						<div class="post-content">
+							<div class="entry-header text-center text-uppercase">
+								<h2><a href="/blog/2017/12/23/using-custom-yolov2-model-on-android">How to Use Custom Tiny YOLOv2 Model on Android</a></h2>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			{% endif %}
+
 			<div class="post-pagination clearfix" style="margin-bottom: 30px">
 				<ul class="pagination text-left">
 					{% if paginator.previous_page %}
-						<li><a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a></li>
+					<li><a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a></li>
 					{% endif %}
-					
+
 					{% for page in (1..paginator.total_pages) %}
-						{% if page == paginator.page %}
-							<li class="active"><a href="#">{{ page }}</a></li>
-						{% elsif page == 1 %}
-							<li><a href="/blog/">{{ page }}</a></li>
-						{% else %}
-							<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
-						{% endif %}
+					{% if page == paginator.page %}
+					<li class="active"><a href="#">{{ page }}</a></li>
+					{% elsif page == 1 %}
+					<li><a href="/blog/">{{ page }}</a></li>
+					{% else %}
+					<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+					{% endif %}
 					{% endfor %}
 
 					{% if paginator.next_page %}
-						<li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
+					<li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
 					{% endif %}
 				</ul>
 			</div>
 			{% for post in paginator.posts %}
-				<article class="single-blog">
-					<div class="post-thumb">
-						<a href="{{ post.url }}"><img src="{{ post.thumb }}" alt=""></a>
+			<article class="single-blog">
+				<div class="post-thumb">
+					<a href="{{ post.url }}"><img src="{{ post.thumb }}" alt=""></a>
+				</div>
+				<div class="post-content">
+					<div class="entry-header text-left text-uppercase">
+						<a href="" class="post-cat">{{ post.tag }}</a>
+						<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 					</div>
-					<div class="post-content">
-						<div class="entry-header text-left text-uppercase">
-							<a href="" class="post-cat">{{ post.tag }}</a>
-							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-						</div>
-						<div class="entry-content">
-							<p>{{ post.desc }}</p>
-						</div>
-						<div class="continue-reading text-left text-uppercase">
-							<a href="{{ post.url }}">Continue Reading</a>
-						</div>
-						<div class="post-meta">
-							<ul class="pull-left list-inline author-meta">
-								<li class="author">By <a href="#">{{ post.author }} </a></li>
-								<li class="date"> On {{ post.date | date: '%B %d, %Y' }} </li>
-							</ul>
-							<ul class="pull-right list-inline social-share">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
+					<div class="entry-content">
+						<p>{{ post.desc }}</p>
 					</div>
-				</article>
+					<div class="continue-reading text-left text-uppercase">
+						<a href="{{ post.url }}">Continue Reading</a>
+					</div>
+					<div class="post-meta">
+						<ul class="pull-left list-inline author-meta">
+							<li class="author">By <a href="#">{{ post.author }} </a></li>
+							<li class="date"> On {{ post.date | date: '%B %d, %Y' }} </li>
+						</ul>
+						<ul class="pull-right list-inline social-share">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
 			{% endfor %}
 			<div class="post-pagination clearfix">
 				<ul class="pagination text-left">
 					{% if paginator.previous_page %}
-						<li><a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a></li>
+					<li><a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a></li>
 					{% endif %}
-					
+
 					{% for page in (1..paginator.total_pages) %}
-						{% if page == paginator.page %}
-							<li class="active"><a href="#">{{ page }}</a></li>
-						{% elsif page == 1 %}
-							<li><a href="/blog/">{{ page }}</a></li>
-						{% else %}
-							<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
-						{% endif %}
+					{% if page == paginator.page %}
+					<li class="active"><a href="#">{{ page }}</a></li>
+					{% elsif page == 1 %}
+					<li><a href="/blog/">{{ page }}</a></li>
+					{% else %}
+					<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+					{% endif %}
 					{% endfor %}
 
 					{% if paginator.next_page %}
-						<li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
+					<li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
 					{% endif %}
 				</ul>
 			</div>
@@ -85,29 +127,38 @@ title: Sean Kelley's Blog
 						<div class="about-me-img">
 							<img src="/img/blog/headshot.jpg" alt="" class="img-me img-circle">
 							<h2 class="text-uppercase">Sean Kelley</h2>
-							<p>CS, Math, and Spanish Undergrad at UMass Amherst '20 | SWE Intern at Microsoft | Excited about Data Science, ML, Cryptocurrency, traveling and language.</p>
+							<p>CS, Math, and Spanish Undergrad at UMass Amherst '20 | SWE Intern at Microsoft | Excited
+								about Data Science, ML, Cryptocurrency, traveling and language.</p>
 						</div>
 					</div>
 					<div class="social-share">
 						<ul class="list-inline">
-							<li><a class="s-linkedin" href="https://linkedin.com/in/seangtkelley"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
-							<li><a class="s-github" href="https://github.com/seangtkelley"><i class="fa fa-github" title="GitHub"></i></a></li>
-							<li><a class="s-github" href="https://duolingo.com/seangtkelley"><i class="fa fa-globe" title="Duolingo"></i></a></li>
+							<li><a class="s-linkedin" href="https://linkedin.com/in/seangtkelley"><i
+										class="fa fa-linkedin" title="LinkedIn"></i></a></li>
+							<li><a class="s-github" href="https://github.com/seangtkelley"><i class="fa fa-github"
+										title="GitHub"></i></a></li>
+							<li><a class="s-github" href="https://duolingo.com/seangtkelley"><i class="fa fa-globe"
+										title="Duolingo"></i></a></li>
 						</ul>
 					</div>
 				</aside>
 				<aside class="widget dev-widget">
 					<h2 class="widget-title text-uppercase text-center">Current Dev Env</h2>
-					<a href="https://www.ubuntu.com/desktop"><img style="width: 140px" src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" width="140" height="140" alt="Fedora Logo"></a>
+					<a href="https://www.ubuntu.com/desktop"><img style="width: 140px"
+							src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" width="140" height="140"
+							alt="Fedora Logo"></a>
 				</aside>
 				<aside class="widget add-widget">
 					<h2 class="widget-title text-uppercase text-center">Listen with me</h2>
-					<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/598201248&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+					<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/598201248&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 				</aside>
 				<aside class="widget add-widget">
 					<h2 class="widget-title text-uppercase text-center">Recommended Watching</h2>
-					<iframe src="https://www.youtube.com/embed/Gvj9ebIePIM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<iframe src="https://www.youtube.com/embed/fNk_zzaMoSs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/Gvj9ebIePIM" frameborder="0"
+						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/fNk_zzaMoSs" frameborder="0"
+						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</aside>
 				<!--<aside class="widget widget-popular-post">
 					<h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
