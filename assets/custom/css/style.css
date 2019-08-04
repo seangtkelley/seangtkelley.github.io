@@ -3083,6 +3083,8 @@ Vertical Timeline
       line-height: 1.3em;
       margin-top: 24px;
       letter-spacing: 0.5px; }
+    #volunteer-timeline .timeline-vert .timeline-panel h5 a {
+      font-size: 15px;}
     #volunteer-timeline .timeline-vert .timeline-panel h6 {
       margin-bottom: 8px;
       text-transform: uppercase;
