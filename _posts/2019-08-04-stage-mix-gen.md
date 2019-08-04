@@ -66,10 +66,12 @@ Finding a good library to edit the mixes was actually a lot easier than I expect
 
 > MoviePy (full [documentation](http://zulko.github.io/moviepy/)) is a Python library for video editing: cutting, concatenations, title insertions, video compositing (a.k.a. non-linear editing), video processing, and creation of custom effects.
 
-Using the library, I was easily able to make a video that was cut every 5 seconds. Below is an example video that the algorithm created using the code thus far. Note I had not yet built the upload to YouTube feature.
+Using the library, I was easily able to make a video that was cut every 5 seconds. Below is an example video that the algorithm created using the code thus far.
 
-
-<iframe src="https://www.youtube.com/embed/bx9MCpnnja8" style="width: 100%; height: 400px" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video width="100%" height="500" controls>
+  <source src="/img/blog/2019-08-04-stage-mix-gen/5SecondCuts.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 
 Pretty cool, right? I sure thought so. This was definitely my minimum viable product (MVP). I now had a working prototype of the system I envisioned earlier. However, I knew I could do better and so I set out to find a method of detecting the cuts in the stage performance videos.
@@ -87,7 +89,10 @@ To determine the threshold at which the algo would register a cut, I followed th
 
 For the stage videos, the default value of 30 was a bit too low so I chose to use 40. From this point, my implementation is quite simple. First, I find all the cuts in each video to be used in the mix. Then, I make the cuts by repeatedly chosing a random video and finding next cut from the current timestamp the loop is at. This algorithm is clearly $O(n^2)$ but its efficiency should be fine for now. Below is an example video that was edited using this method.
 
-<iframe src="https://www.youtube.com/embed/YZC8a0AqG4o" style="width: 100%; height: 400px" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video width="100%" height="500" controls>
+  <source src="/img/blog/2019-08-04-stage-mix-gen/MatchedCuts.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 Now that the resulting stage mix was satisfactory (at least to me), the final step was to automatically share my creation.
 
