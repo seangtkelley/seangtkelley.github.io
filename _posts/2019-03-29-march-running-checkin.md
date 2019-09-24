@@ -4,7 +4,7 @@ title: "March Running Check-in"
 desc: "In my post from January about becoming a better runner, I mentioned that I would be posting an update to track my new fitness goals. February got a bit hectic so I decided to make the post in March. Let's see if we can use data to determine if I stuck to my goals!"
 tag: "Data Visualization"
 author: "Sean Kelley"
-thumb: "/img/blog/2019-01-19-better-runner/marathoners-running.jpg"
+thumb: "/img/compressed/blog/2019-01-19-better-runner/marathoners-running.jpg"
 date: 2019-03-29
 ---
 

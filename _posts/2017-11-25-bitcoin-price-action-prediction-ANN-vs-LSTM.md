@@ -4,7 +4,7 @@ title: "Techniques for Predicting Bitcoin Price Action"
 desc: "According to Abernathy MacGregor, a strategic communications firm, as of 2014, more than 75 percent of trades on US stock exchanges are from automated trading systems. If you've ever wondered how they do it, this notebook and the one it references could serve as a quick introduction. "
 tag: "Machine Learning"
 author: "Sean Kelley"
-thumb: "/img/blog/bitcoin.jpg"
+thumb: "/img/compressed/blog/bitcoin.jpg"
 date: 2017-11-25
 ---
 
