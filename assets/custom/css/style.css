@@ -24,7 +24,7 @@
   background: url("../images/02-john/backgrounds/07.jpg"); }
 
 .bg-john-08 {
-  background: url("../../../img/tupelo-live-me.jpg");
+  background: url("../../../img/compressed/tupelo-live-me.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -49,12 +49,12 @@
   background-size: cover; }
 
 .ed-timeline-01 {
-  background: url("../../../img/pinkerton-academy.jpg");
+  background: url("../../../img/compressed/pinkerton-academy.jpg");
   background-position: center;
   background-size: cover; }
 
 .ed-timeline-02 {
-  background: url("../../../img/umass-amherst.jpg");
+  background: url("../../../img/compressed/umass-amherst.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -64,18 +64,18 @@
   background-size: cover; }
 
 .work-timeline-01 {
-  background: url("../../../img/ccom-vislab.jpg");
+  background: url("../../../img/compressed/ccom-vislab.jpg");
   background-position: center;
   background-size: cover; }
 
 .work-timeline-02 {
-  background: url("../../../img/laser-wave-tank.jpg");
+  background: url("../../../img/compressed/laser-wave-tank.jpg");
   background-position-x: center;
   background-position-y: 8%;
   background-size: cover; }
 
 .work-timeline-03 {
-  background: url("../../../img/umass-job.jpg");
+  background: url("../../../img/compressed/umass-job.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -85,22 +85,22 @@
   background-size: cover; }
 
 .work-timeline-05 {
-  background: url("../../../img/ms-garage-team.jpg");
+  background: url("../../../img/compressed/ms-garage-team.jpg");
   background-position: center;
   background-size: cover; }
 
 .work-timeline-06 {
-  background: url("../../../img/umass-cs-building.jpg");
+  background: url("../../../img/compressed/umass-cs-building.jpg");
   background-position: center;
   background-size: cover; }
 
 .work-timeline-07 {
-  background: url("../../../img/ms-logo.jpg");
+  background: url("../../../img/compressed/ms-logo.jpg");
   background-position: center;
   background-size: cover; }
 
 .vol-timeline-01 {
-  background: url("../../../img/eagle-scout-project.jpg");
+  background: url("../../../img/compressed/eagle-scout-project.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -116,12 +116,12 @@
   background-size: cover; }
 
 .vol-timeline-04 {
-  background: url("../../../img/all-hands-usvi.jpg");
+  background: url("../../../img/compressed/all-hands-usvi.jpg");
   background-position: center;
   background-size: cover; }
 
 .vol-timeline-05 {
-  background: url("../../../img/all-hands-pr.jpg");
+  background: url("../../../img/compressed/all-hands-pr.jpg");
   background-position: center;
   background-size: cover; }
 

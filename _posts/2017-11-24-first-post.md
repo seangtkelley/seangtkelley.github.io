@@ -4,7 +4,7 @@ title: "> git init"
 desc: "Hello and welcome to my blog!"
 tag: "Introduction"
 author: "Sean Kelley"
-thumb: "/img/villalaangostura.jpg"
+thumb: "/img/compressed/villalaangostura.jpg"
 date: 2017-11-24
 ---
 
