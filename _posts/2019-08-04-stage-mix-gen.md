@@ -6,7 +6,7 @@ Programming can solve many compelling problems. But, I believe that many people 
 I try to show a novel application of programming that I haven't seen before."
 tag: "Creative"
 author: "Sean Kelley"
-thumb: "/img/blog/2019-08-04-stage-mix-gen/Girls-Generation-I-Got-A-Boy.jpg"
+thumb: "/img/blog/2019-08-04-stage-mix-gen/stage-nosebleeds.jpg"
 date: 2019-08-04
 ---
 
