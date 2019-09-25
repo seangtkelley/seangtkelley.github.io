@@ -4,7 +4,7 @@ title: "Becoming a Better Runner using Data"
 desc: "This summer I ran a lot -- almost every day. It was great to start the morning getting my blood pumping and feeling energized to start the day. However, towards the end of this summer, I started to realize that my form might be unhealthy. Can I use my data to determine what factors lead to a bad form?"
 tag: "Data Visualization/Data Analysis"
 author: "Sean Kelley"
-thumb: "/img/blog/2019-01-19-better-runner/marathoners-running.jpg"
+thumb: "/img/compressed/blog/2019-01-19-better-runner/marathoners-running.jpg"
 date: 2019-01-19
 ---
 
