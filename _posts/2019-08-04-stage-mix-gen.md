@@ -38,9 +38,9 @@ One thing that I believe I've mentioned before in my blog posts is that one of t
 
 ![png](https://github.com/allisonnicoledeal/VideoSync/raw/master/screenshots/screenshot.png)
 
-Well you don't say! This is almost exactly what I'm already trying to do. [VideoSync]() is a project by [Allison Deal]() which "automatically synchronizes and combines personal and crowd-sourced YouTube video clips to recreate a live concert experience from multiple angles."
+Well you don't say! This is almost exactly what I'm already trying to do. [VideoSync](https://github.com/allisonnicoledeal/VideoSync) is a project by [Allison Deal](https://github.com/allisonnicoledeal) which "automatically synchronizes and combines personal and crowd-sourced YouTube video clips to recreate a live concert experience from multiple angles."
 
-Here's a description of the program from the repo's [README]():
+Here's a description of the program from the repo's [README](https://github.com/allisonnicoledeal/VideoSync/blob/master/README.md):
 > * **YouTube Link**: Download YouTube videos as MP4 files with youtube-dl command line program.
 > * **WAV File**: Strip audio from video file using the avconv audio/video converter. Read audio data using the Python scipy library.
 > * **Fourier Transform of Audio Signal**: Split audio into bins and apply the Fourier transform on each bin using the numpy library. The Fourier transform converts each bin data from the time domain to the frequency domain.
@@ -54,7 +54,7 @@ This is super close to what I was trying to do, however with a few subtle differ
 3. The performances are meant to be entire concerts, not single songs
 4. The final video is not edited
 
-The key difference here is the final product. Deal's goal was to give a live concert experience by showing multiple angles at the same time. I was looking to edit different stage performances into one video, similar to the stage mixes on YouTube. Even with these differences, I knew I could use the underlying code that aligned the videos. Unfortunately, VideoSync has not been updated since 2014 so I struggled to get any of the python to run without errors. After some more googling, I found that the main function in the VideoSync code was adapted to be used in the [cvcalib]() library. Since this library had been updated more recently, the code worked out of the box. If anyone is curious, the function I use can be located [here](https://github.com/Algomorph/cvcalib/blob/4ed638ea523b6d1059556a135576c7afa3a4b07f/audiosync/offset.py#L172).
+The key difference here is the final product. Deal's goal was to give a live concert experience by showing multiple angles at the same time. I was looking to edit different stage performances into one video, similar to the stage mixes on YouTube. Even with these differences, I knew I could use the underlying code that aligned the videos. Unfortunately, VideoSync has not been updated since 2014 so I struggled to get any of the python to run without errors. After some more googling, I found that the main function in the VideoSync code was adapted to be used in the [cvcalib](https://github.com/Algomorph/cvcalib) library. Since this library had been updated more recently, the code worked out of the box. If anyone is curious, the function I use can be located [here](https://github.com/Algomorph/cvcalib/blob/4ed638ea523b6d1059556a135576c7afa3a4b07f/audiosync/offset.py#L172).
 
 So now that I could align the videos, I needed to edit them.
 
