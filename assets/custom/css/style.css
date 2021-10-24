@@ -126,7 +126,19 @@
   background-size: cover; }
 
 .vol-timeline-06 {
-  background: url("https://supportkind.org/wp-content/themes/KIND/assets/images/logo.png");
+  background: url("../../../img/kind-logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.vol-timeline-07 {
+  background: url("../../../img/rte_logo_dark2-byline.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.vol-timeline-08 {
+  background: url("../../../img/el-aula-azul-una-escuela-logo.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
