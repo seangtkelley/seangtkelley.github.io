@@ -105,7 +105,12 @@
   background-size: cover; }
 
 .work-timeline-08 {
-  background: url("../../../img/ms-logo.jpg");
+  background: url("../../../img/microsoft-1mem.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.work-timeline-09 {
+  background: url("../../../img/microsoft-ireland.jpeg");
   background-position: center;
   background-size: cover; }
 
