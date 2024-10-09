@@ -2420,10 +2420,10 @@ section.dark {
   section.dark p, section.dark h2, section.dark h3, section.dark h4, section.dark h5 {
     color: #dadada; }
   section.dark a, section.dark .infoblock a {
-    color: #f2f2f2; }
+    color: #f2f2f2; 
+    text-decoration: underline; }
     section.dark a:hover, section.dark .infoblock a:hover {
-      color: #E84855;
-      text-decoration: none; }
+      color: #E84855; }
 
 section.light {
   color: #303030; }
