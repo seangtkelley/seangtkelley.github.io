@@ -17,6 +17,7 @@ Either way, I needed an engaging activity that was both challenging and enjoyabl
 During my semester abroad, I enrolled in a translation class. This turned out to be an incredible experience. We primarily worked on translating a Basque children's folktale from Spanish and Euskara to English. There would be fierce debates in class about sometimes the simplest wording and it was here that I felt for the first time the insurmountable but invigorating task of faithful translation. The fact that this book was aimed at children added an additional layer of difficulty as often certain words would have different difficulty levels between languages. For example, the Spanish translation uses the word *trillar*, which means to thresh as in wheat, but no beginner reader in English would be familar with threshing wheat! However, we also had to consider if we wanted to include some more difficult words as a learning experience.
 
 ![](/img/blog/2025-03-15-la-concha-wiki-article-translation/basajaun-cover.jpg)
+<br>
 [*Available on Amazon!*](https://www.amazon.com/dp/B087LB13PW/)
 
 As is probably evident, I thoroughly enjoyed the course. Thus, after the semester ended, translation seemed like a great way to continue to exercise my Spanish skills with the potential added benefit of making texts or information more accessible to more people.
