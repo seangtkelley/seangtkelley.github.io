@@ -8,9 +8,6 @@ thumb: "/img/blog/2025-03-15-la-concha-wiki-article-translation/final-article-he
 date: 2025-03-15
 ---
 
-
-# 
-
 ## Background
 
 I have always been interested in languages, and Spanish was one that I particularly enjoyed learning. I started seriously studying Spanish in late high school and continued to obtain a B.A. in Spanish language in college. Throughout my four years, Spanish courses were always a nice reprieve from more techinical courses. In addition, the difference between a minor and major required me to study abroad in Spain where I could take a full class load of advanced courses my final semester in Spring 2020. When the pandemic hit in 2020, I was forced to return to the US and continue my Spanish classes remotely. It was quite a difficult transition and I felt robbed of my academic opportunities due to the lockdowns. I'm sure many students still feel that way about the pandemic despite the fact that the measures were necessary.
