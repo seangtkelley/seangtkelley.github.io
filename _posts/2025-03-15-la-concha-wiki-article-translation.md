@@ -2,7 +2,7 @@
 layout: post
 title: "Translation on Wikipedia: Bahía de La Concha from Spanish to English"
 desc: "Translating articles on Wikipedia seems like the perfect way to continue working with Spanish while contributing to a valuable knowledge resource."
-tag: "Creative"
+tag: "Language"
 author: "Sean Kelley"
 thumb: "/img/blog/2025-03-15-la-concha-wiki-article-translation/final-article-header.png"
 date: 2025-03-15
