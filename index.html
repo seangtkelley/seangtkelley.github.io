@@ -621,7 +621,7 @@
                         </div>
                      </div>
                   </li>
-                  <li>
+                  <li class="work-timeline-hideable">
                      <div class="timeline-badge danger"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Jun 2019</p>
@@ -643,7 +643,7 @@
                         </div>
                      </div>
                   </li>
-                  <li class="timeline-inverted">
+                  <li class="timeline-inverted work-timeline-hideable">
                      <div class="timeline-badge success"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Sep 2018 - Dec 2018</p>
@@ -663,7 +663,7 @@
                         </div>
                      </div>
                   </li>
-                  <li>
+                  <li class="work-timeline-hideable">
                      <div class="timeline-badge danger"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Jun 2018 - Aug 2018</p>
@@ -685,7 +685,7 @@
                         </div>
                      </div>
                   </li>
-                  <li class="timeline-inverted">
+                  <li class="timeline-inverted work-timeline-hideable">
                      <div class="timeline-badge danger"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Jul 2017 - Aug 2018</p>
@@ -708,7 +708,7 @@
                         </div>
                      </div>
                   </li>
-                  <li>
+                  <li class="work-timeline-hideable">
                      <div class="timeline-badge danger"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Sep 2016 - May 2018</p>
@@ -728,7 +728,7 @@
                         </div>
                      </div>
                   </li>
-                  <li class="timeline-inverted">
+                  <li class="timeline-inverted work-timeline-hideable">
                      <div class="timeline-badge success"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Sep 2015 - Aug 2016</p>
@@ -757,7 +757,7 @@
                         </div>
                      </div>
                   </li>
-                  <li>
+                  <li class="work-timeline-hideable">
                      <div class="timeline-badge primary"><i class="flaticon-star"></i></div>
                      <div class="timeline-panel">
                         <p class="timeline-time">Jun 2014 - Aug 2017</p>
@@ -776,6 +776,47 @@
                      </div>
                   </li>
                </ul>
+               <div class="text-center" style="margin-top: 20px;">
+                  <button id="toggle-work-timeline" class="btn btn-lgr-str" style="font-size:1.2em;">Show 7 More</button>
+               </div>
+               <script>
+                  // TODO: move into separate js file, probably assets/custom/js/script.js?
+                  document.addEventListener('DOMContentLoaded', function () {
+                     var btn = document.getElementById('toggle-work-timeline');
+                     var hiddenItems = document.querySelectorAll('.work-timeline-hideable');
+                     var expanded = false;
+                     // Hide extra items by adding a CSS class
+                     hiddenItems.forEach(function (li) {
+                        li.classList.add('work-timeline-collapsed');
+                     });
+                     btn.addEventListener('click', function () {
+                        // TODO: fix this terrible logic
+                        expanded = !expanded;
+
+                        // TODO: make this a function on it's own
+                        hiddenItems.forEach(function (li) {
+                           if (expanded) {
+                              li.classList.remove('work-timeline-collapsed');
+
+                              // TODO: scroll to #work-timeline
+                              // document.getElementById('#work-timeline').scrollIntoView({
+                              //    behavior: 'smooth',
+                              //    block: 'start'
+                              // });
+                           } else {
+                              li.classList.add('work-timeline-collapsed');
+                           }
+                        });
+                        btn.textContent = expanded ? 'Show Less' : 'Show 7 More';
+                     });
+                  });
+               </script>
+               <!-- TODO: move to assets/custom/css/style.css -->
+               <style>
+                  .work-timeline-collapsed {
+                     display: none;
+                  }
+               </style>
             </div>
          </section>
          <!-- /Work Block -->
